@@ -1,0 +1,144 @@
+/* Mengatur tampilan teks */
+.typing-animation {
+    display: inline-flex;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Efek Kursor Berkedip */
+  .caret {
+    animation: blink 0.8s infinite;
+  }
+  
+  /* Animasi Kursor Berkedip */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+/* Efek Kursor Berkedip */
+.typing-animation {
+    display: inline-flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .caret {
+    animation: blink 0.8s infinite;
+  }
+  
+  /* Animasi Kursor Berkedip */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+.social-icon {
+  background: linear-gradient(45deg, #3b82f6, #06b6d4);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  color: white;
+  transform: scale(1.2);
+  box-shadow: 0px 4px 15px rgba(0, 112, 243, 0.5);
+}
+
+#about {
+  display: flex;
+  align-items: center; /* Mengatur gambar dan teks agar sejajar secara vertikal */
+  gap: 1rem; /* Mengatur jarak antara gambar dan teks */
+}
+
+#about img {
+  max-width: 300px; /* Atur ukuran maksimal untuk gambar */
+  margin-right: 1rem; /* Jarak antara gambar dan teks bisa diatur dengan margin ini */
+  border-radius: 10px; /* Membuat sudut gambar melengkung, opsional */
+}
+
+/* Jika jarak masih terlalu jauh, coba atur nilai padding atau gap */
+
+
+
+
+/* Animasi Fade In */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(10px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Gaya untuk elemen yang baru muncul */
+.fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+
+/* Gaya Menu Mobile */
+#mobile-menu {
+    position: absolute;
+    top: 4rem; /* Mengatur posisi tepat di bawah tombol menu */
+    left: 0;
+    width: 100%;
+    background-color: #1f2937; /* Latar belakang abu gelap */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan */
+    opacity: 0;
+    transform: translateY(-20px); /* Mulai dengan sedikit di luar layar */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Efek transisi */
+    z-index: 50;
+}
+
+#mobile-menu.show {
+    opacity: 1;
+    transform: translateY(0); /* Tampilkan menu */
+}
+
+/* Efek Hover pada Tautan */
+#mobile-menu a {
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+#mobile-menu a:hover {
+    color: #60a5fa; /* Warna biru terang saat hover */
+}
