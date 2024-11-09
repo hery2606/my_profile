@@ -19,6 +19,7 @@ function typeHeri() {
   }
 }
 
+
 function typeArista() {
   if (aristaIndex < aristaText.length) {
     aristaElement.innerHTML += aristaText[aristaIndex];

@@ -13,13 +13,13 @@
 
 
 <body class="text-white">
-    <section class="relative h-screen flex flex-col justify-center items-start px-10 bg-cover bg-center" style="background-image: url('images/Home.png');">
+    <section class="relative h-screen flex flex-col justify-center items-start px-10 bg-cover bg-center" style="background-image: url('images/gambar1.1.jpg');">
     <!-- Navbar -->
     <header class="flex items-center justify-between py-2  w-full top-0">
         <!-- Logo -->
         <div class="flex items-center space-x-2">
             <i class="bx bx-cube text-3xl"></i>
-            <span class="text-xl font-bold">heri.</span>
+            <span class="text-xl font-bold">Heri.</span>
         </div>
 
         
@@ -54,7 +54,7 @@
         <!-- Main Text -->
          
             <h1 class="text-5xl font-bold mb-4 typing-animation">
-  <span id="typing-text">
+  <span id="text">
     <span id="heri" style="color: white;"></span>
     <span id="arista" style="color: #1D4ED8;"></span>
   </span>
@@ -62,7 +62,7 @@
   
 </h1>
 
-            <p class="text-xl">mahasiswa. Pengajar. Pengembang.</p>
+            <p class="text-xl">mahasiswa. Pelajar. Pengembang.</p>
         </div>
 
         <!-- Social Media Icons -->
@@ -78,27 +78,169 @@
     </section>
 </section>
 
-    <!-- Profile Section -->
-    <section id="about" class="flex flex-col md:flex-row items-center justify-between p-10 bg-gray-800" style="background-image: url('images/Home.png');">
-        <div class="w-full md:w-1/2 mb-8 md:mb-0">
-            <img src="images/heri.1.jpg" alt="Building Image" class="w-full h-auto">
+<section id="about" class="flex flex-col md:flex-row items-center justify-between p-10 bg-gray-800" style="background-image: url('images/gambar.4.jpg');">
+    <div class="w-full md:w-1/2 mb-8 md:mb-0">
+        <img src="images/heri.1.jpg" alt="Foto Heri Arista" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+
+    <div class="w-full md:w-1/2 text-left md:px-10">
+        <h2 class="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">About Me</h2>
+        <p id="typing-paragraph" class="mb-6">Saya Heri Arista berasal dari Kalimantan Utara. Anak ke-3 dari 4 bersaudara dan berprofesi sebagai akuntan di salah satu perusahaan.</p>
+
+        <!-- Teks tambahan yang disembunyikan -->
+        <p id="additional-text" class="hidden mb-6">
+            Saya memiliki pengalaman dalam pengelolaan pajak dan akuntansi perusahaan selama lebih dari 5 tahun. Saya juga aktif dalam komunitas lokal dan suka belajar hal baru terkait keuangan dan investasi.
+        </p>
+
+        <button id="next-button" class="inline-block px-6 py-2 bg-white text-gray-800 font-semibold rounded-md hover:bg-gray-800 hover:text-white transition duration-200 transition-transform duration-300 transform hover:scale-105">Selanjutnya ></button>
+        
+        <!-- Wrapper untuk Keahlian Saya dengan latar belakang blur transparan -->
+        <div class="skills-section bg-gray-900 bg-opacity-50 backdrop-blur-md p-6 rounded-lg mt-8">
+            <h2 class="text-3xl font-bold mb-8 text-center">Keahlian Saya</h2>
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- Front-End Development -->
+                <div class="relative group">
+                    <div class="flex items-center space-x-3 mb-2">
+                        <i class="bx bx-code-alt text-blue-500 text-2xl"></i> <!-- Ikon Front-End -->
+                        <h3 class="text-xl font-semibold">Front-End Development</h3>
+                    </div>
+                    <div class="bg-gray-700 rounded-full h-4 mb-4">
+                        <div class="bg-blue-500 h-4 rounded-full progress-bar" style="width: 80%;" data-tooltip="80% - Sangat Mahir"></div>
+                    </div>
+                </div>
+
+                <!-- Back-End Development -->
+                <div class="relative group">
+                    <div class="flex items-center space-x-3 mb-2">
+                        <i class="bx bx-server text-green-500 text-2xl"></i> <!-- Ikon Back-End -->
+                        <h3 class="text-xl font-semibold">Back-End Development</h3>
+                    </div>
+                    <div class="bg-gray-700 rounded-full h-4 mb-4">
+                        <div class="bg-green-500 h-4 rounded-full progress-bar" style="width: 65%;" data-tooltip="65% - Terampil"></div>
+                    </div>
+                </div>
+                
+                <!-- Tambahkan keterampilan lainnya di sini -->
+            </div>
         </div>
-        <div class="w-full md:w-1/2 text-left md:px-10">
-            <h2 class="text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">About Me</h2>
-            <p id="typing-paragraph" class="mb-6">Saya Heri Arista berasal dari Kalimantan Utara. Anak ke-3 dari 4 bersaudara dan berprofesi sebagai akuntan di salah satu perusahaan.</p>
+    </div>
+</section>
+ 
+
+
+
+    <section id="portfolio" class="p-10 bg-gray-100 text-white-800" style="background-image: url('images/gambar.1.jpg')">
+        <h2 class="text-3xl font-bold mb-8 text-center">Portfolio Saya</h2>
+        <div class="grid gap-8 md:grid-cols-3">
             
-            <!-- Teks tambahan yang disembunyikan -->
-            <p id="additional-text" class="hidden mb-6">
-                Saya memiliki pengalaman dalam pengelolaan pajak dan akuntansi perusahaan selama lebih dari 5 tahun. Saya juga aktif dalam komunitas lokal dan suka belajar hal baru terkait keuangan dan investasi.
-            </p>
+            <!-- Proyek 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="images/gambar.3.jpg" alt="Proyek 1" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-2">My Profile</h3>
+                <p class="text-gray-600 mb-2">Deskripsi singkat tentang proyek ini dan tantangan yang dihadapi.</p>
+                
+                <!-- Rating dan Pengunjung -->
+                <div class="flex items-center justify-between text-gray-500 text-sm mb-4">
+                    <!-- Rating Bintang -->
+                    <div class="flex items-center">
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star-half text-yellow-500"></i>
+                        <span class="ml-2">4.5</span>
+                    </div>
+                    
+                    <!-- Jumlah Pengunjung -->
+                    <div class="flex items-center">
+                        <i class="bx bx-show text-lg"></i>
+                        <span class="ml-1">12,345</span>
+                    </div>
+                </div>
+                
+                <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Lihat Proyek</a>
+            </div>
+            
+            <!-- Proyek 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="images/gambar.2.jpg" alt="Proyek 2" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-2">My To-Do List</h3>
+                <p class="text-gray-600 mb-2">Deskripsi singkat tentang proyek ini dan tantangan yang dihadapi.</p>
+                
+                <div class="flex items-center justify-between text-gray-500 text-sm mb-4">
+                    <div class="flex items-center">
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <span class="ml-2">4.0</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="bx bx-show text-lg"></i>
+                        <span class="ml-1">9,876</span>
+                    </div>
+                </div>
+                
+                <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Lihat Proyek</a>
+            </div>
+            
+            <!-- Proyek 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <img src="images/gambar.1.jpg" alt="Proyek 3" class="w-full h-48 object-cover rounded-md mb-4">
+                <h3 class="text-xl font-semibold mb-2">Framework Tailwind</h3>
+                <p class="text-gray-600 mb-2">Deskripsi singkat tentang proyek ini dan tantangan yang dihadapi.</p>
+                
+                <div class="flex items-center justify-between text-gray-500 text-sm mb-4">
+                    <div class="flex items-center">
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <i class="bx bxs-star text-yellow-500"></i>
+                        <span class="ml-2">4.0</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="bx bx-show text-lg"></i>
+                        <span class="ml-1">7,542</span>
+                    </div>
+                </div>
+                
+                <a href="#" class="text-blue-500 hover:underline mt-2 inline-block">Lihat Proyek</a>
+            </div>
     
-            <button id="next-button" class="inline-block px-6 py-2 bg-white text-gray-800 font-semibold rounded-md hover:bg-gray-800 hover:text-white transition duration-200 transition-transform duration-300 transform hover:scale-105">Selanjutnya ></button>
+            <!-- Tambahkan proyek lainnya dengan format serupa -->
         </div>
+      <div class="p-10 bg-gray-100 bg-opacity-50 backdrop-blur-md rounded-lg mt-8 text-gray-800" >
+        <h2 class="text-3xl font-bold mb-8 text-center">Apa Kata Mereka</h2>
+        <div class="grid gap-8 md:grid-cols-2">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="italic mb-4">"Sangat puas dengan hasil kerjanya! Profesional dan cepat."</p>
+                <div class="flex items-center">
+                    <img src="images/client1.jpg" alt="Client 1" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h3 class="font-bold">John Doe</h3>
+                        <p class="text-sm text-gray-600">CEO, Perusahaan XYZ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <p class="italic mb-4">"Sangat puas dengan hasil kerjanya! Profesional dan cepat."</p>
+                <div class="flex items-center">
+                    <img src="images/client1.jpg" alt="Client 1" class="w-12 h-12 rounded-full mr-4">
+                    <div>
+                        <h3 class="font-bold">John Doe</h3>
+                        <p class="text-sm text-gray-600">CEO, Perusahaan XYZ</p>
+                    </div>
+                </div>
+            </div>
+      </div>
     </section>
     
 
-    <!-- Services Section -->
-    <section id="services" class="p-10"style="background-image: url('images/Home.png');">
+ 
+    
+
+      <!-- Services Section -->
+      <section id="services" class="p-10"style="background-image: url('images/Home.png');">
         
         <h2 class="text-3xl font-bold mb-8">Layanan Kami</h2>
         <div class="grid gap-8 md:grid-cols-3">
@@ -120,13 +262,34 @@
         </div>
     </section>
 
+    <section id="blog" class="p-10 bg-gray-800 text-white" style="background-image: url('images/Gambar\ WhatsApp\ 2024-11-09\ pukul\ 17.15.35_77c66f6d.jpg');">
+        <h2 class="text-3xl font-bold mb-8 text-center">Blog</h2>
+        <div class="grid gap-8 md:grid-cols-2">
+            <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Judul Artikel 1</h3>
+                <p class="text-gray-300">Ringkasan singkat tentang artikel ini...</p>
+                <a href="#" class="text-blue-400 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+            </div>
+           <!-- Tambahkan artikel lainnya -->
+            <div class="bg-gray-700 p-6 rounded-lg">
+                <h3 class="text-xl font-semibold mb-2">Judul Artikel 1</h3>
+                <p class="text-gray-300">Ringkasan singkat tentang artikel ini...</p>
+                <a href="#" class="text-blue-400 hover:underline mt-2 inline-block">Baca Selengkapnya</a>
+            </div>
+            <!-- Tambahkan artikel lainnya -->
+        </div>
+    </section>
+    
+    
+    
+
     <!-- Footer Section -->
 <footer id="Home" class="bg-gray-900 text-white py-6 px-4">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <!-- Nama atau Brand -->
         <div class="text-center md:text-left mb-4 md:mb-0">
             <h3 class="text-xl font-bold">Heri Arista</h3>
-            <p>&copy; 2023. All rights reserved.</p>
+            <p>&copy; 2024. All rights reserved.</p>
         </div>
         
         <!-- Navigasi Footer -->
